@@ -385,26 +385,7 @@ a:focus {
   }
 }
 
-/* Further adjustments for very small screens */
-@media (max-width: 576px) {
-  .slider_section {
-      padding: 120px 0; /* Further increase padding for very small screens */
-  }
 
-  .detail-box h1 {
-      font-size: 18px; /* Further reduce font size for very small screens */
-  }
-
-  .detail-box p {
-      font-size: 12px; /* Reduce paragraph font size for very small screens */
-      max-width: 90%; /* Limit width for better alignment */
-  }
-
-  .btn-box .btn1 {
-      font-size: 12px; /* Adjust button text size for very small screens */
-      padding: 8px 12px; /* Adjust button padding */
-  }
-}
 
 
 
