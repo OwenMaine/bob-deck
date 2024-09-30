@@ -109,40 +109,6 @@
                               <span id="cart-count" class="cart-count">0</span> <!-- Span to show item count -->
                            </a>
                        </li>
-                       
-                       <script>
-                        let cart = [];
-let cartCount = 0; // New variable to keep track of total items in the cart
-
-function addToCart(productName, price) {
-    // Check if the product is already in the cart
-    const productIndex = cart.findIndex(item => item.name === productName);
-
-    if (productIndex !== -1) {
-        // If it exists, increase the quantity
-        cart[productIndex].quantity += 1;
-    } else {
-        // If it doesn't exist, add it to the cart
-        cart.push({
-            name: productName,
-            price: price,
-            quantity: 1
-        });
-    }
-
-    // Update the total cart count
-    cartCount += 1; // Increment the count for each item added
-    document.getElementById('cart-count').textContent = cartCount; // Update the displayed count
-
-    // Save cart to local storage (optional)
-    localStorage.setItem('cart', JSON.stringify(cart));
-
-    alert(`${productName} has been added to your cart!`);
-}
-
-                      
-
-                       </script>
                            </a>
                         </li>
                         <form class="form-inline">
@@ -238,7 +204,7 @@ function addToCart(productName, price) {
          <div class="container">
             <div class="heading_container heading_center">
                <h2>
-                  Why Shop With Us
+                  What We Do
                </h2>
             </div>
             <div class="row">
@@ -333,10 +299,10 @@ function addToCart(productName, price) {
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Fast Delivery
+                           Custom Door Manufacturing
                         </h5>
                         <p>
-                           Get your door frames swiftly with our reliable, efficient service.
+                           We design and manufacture doors tailored to your specific needs, offering a variety of materials, finishes, and sizes to match any architectural style. Our craftsmanship ensures durability, functionality, and aesthetic appeal for residential, commercial, or industrial spaces.
                         </p>
                      </div>
                   </div>
@@ -448,10 +414,10 @@ function addToCart(productName, price) {
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Free Shipping
+                           Door Installation Services
                         </h5>
                         <p>
-                           Enjoy cost-effective solutions with our free shipping on all door frame orders, nationwide.
+                           Our expert team provides professional door installation to guarantee a seamless fit and reliable performance. We ensure precision and quality in every installation, whether it’s for new construction or door replacement projects.
                         </p>
                      </div>
                   </div>
@@ -469,10 +435,10 @@ function addToCart(productName, price) {
                      </div>
                      <div class="detail-box">
                         <h5>
-                           Best Quality
+                           Door Frame Fabrication
                         </h5>
                         <p>
-                           Our door frames are crafted from premium materials, ensuring durability, strength, and long-lasting performance.
+                           We specialize in crafting high-quality door frames that perfectly complement our doors. Our frames are designed to provide robust support and enhance the overall structure, available in different materials such as wood, metal, or composite for added flexibility and strength.
                         </p>
                      </div>
                   </div>
