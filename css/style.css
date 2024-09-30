@@ -251,7 +251,7 @@ a:focus {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 90px 0 75px;
+  padding: 90px 0 75px; /* Default padding for desktop */
   overflow: hidden; /* Prevent overflow of text and images */
 }
 
@@ -355,7 +355,7 @@ a:focus {
 /* Style adjustments for mobile view */
 @media (max-width: 768px) {
   .slider_section {
-      padding: 60px 0; /* Reduced padding for mobile */
+      padding: 100px 0; /* Increased top and bottom padding for mobile */
   }
 
   .detail-box {
@@ -387,6 +387,10 @@ a:focus {
 
 /* Further adjustments for very small screens */
 @media (max-width: 576px) {
+  .slider_section {
+      padding: 120px 0; /* Further increase padding for very small screens */
+  }
+
   .detail-box h1 {
       font-size: 18px; /* Further reduce font size for very small screens */
   }
@@ -401,6 +405,7 @@ a:focus {
       padding: 8px 12px; /* Adjust button padding */
   }
 }
+
 
 
 
