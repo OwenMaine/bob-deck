@@ -358,9 +358,9 @@ a:focus {
       padding: 100px 0; /* Increased top and bottom padding for mobile */
   }
   .slider_bg_box img {
-    max-width: 600px;
+    max-width: 400px;
   }
-  
+
   .detail-box {
       padding: 10px; /* Reduced padding for mobile */
   }
