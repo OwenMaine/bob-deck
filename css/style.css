@@ -565,24 +565,41 @@ a:focus {
 .arrival_section .box {
   padding: 120px 45px;
   position: relative;
+  overflow: hidden; /* To prevent overflow of content */
 }
 
 .arrival_section .arrival_bg_box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1; /* Set the background image below text */
 }
 
 .arrival_section .arrival_bg_box img {
-    width: 50%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
-    -o-object-position: top left;
-    object-position: top left;
+  width: 100%; /* Adjust the image to take the full width */
+  height: auto; /* Ensure the height is auto to maintain aspect ratio */
+  object-fit: cover;
+  object-position: center; /* Center the image within the container */
+}
+
+.arrival_section .row {
+  position: relative;
+  z-index: 2; /* Make sure text is on top of the image */
+}
+
+.arrival_section .col-md-6 {
+  background-color: rgba(255, 255, 255, 0.8); /* Add a slight background to make text stand out */
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.arrival_section p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .arrival_section a {
@@ -592,7 +609,6 @@ a:focus {
   border: 1px solid #f7444e;
   color: #ffffff;
   border-radius: 0;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
@@ -600,6 +616,46 @@ a:focus {
   background-color: transparent;
   color: #f7444e;
 }
+
+/* Responsive adjustments for mobile view */
+@media (max-width: 768px) {
+  .arrival_section .box {
+    padding: 60px 20px; /* Reduce padding on smaller screens */
+  }
+
+  .arrival_section .arrival_bg_box img {
+    width: 100%; /* Ensure the image still fills the width of the screen */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .arrival_section p {
+    font-size: 16px; /* Adjust text size for smaller screens */
+    line-height: 1.4;
+  }
+
+  .arrival_section a {
+    padding: 10px 30px; /* Adjust button padding for mobile */
+  }
+}
+
+@media (max-width: 576px) {
+  .arrival_section .box {
+    padding: 40px 15px; /* Further reduce padding on very small screens */
+  }
+
+  .arrival_section .heading_container h2 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  .arrival_section p {
+    font-size: 14px; /* Reduce text size on smaller devices */
+  }
+
+  .arrival_section a {
+    padding: 8px 25px; /* Reduce button size on very small screens */
+  }
+}
+
 
 .why_section .box {
     text-align: center;
