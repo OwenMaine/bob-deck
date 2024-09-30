@@ -272,11 +272,13 @@ a:focus {
 }
 
 .slider_section .detail-box h1 {
-    font-size: 4.5rem;
+    font-size: 24px; /* Adjust font size for mobile */
     font-weight: bold;
     margin-bottom: 15px;
     color: #002c3e;
-    line-height: 70px;
+    line-height: 1.2; /* Reduce line height */
+    overflow-wrap: break-word; /* Break long words */
+        word-wrap: break-word; /* Break long words */
 }
 
 .slider_section .detail-box h1 span {
@@ -287,6 +289,8 @@ a:focus {
   font-size: 16px; /* Adjust font size for paragraphs */
     margin-top: 20px;
     margin-bottom: 1.5rem;
+    overflow-wrap: break-word; /* Break long words */
+    word-wrap: break-word; /* Break long words */
 }
 
 .slider_section .detail-box a {
@@ -356,18 +360,47 @@ a:focus {
 }
 /* Style adjustments for mobile view */
 @media (max-width: 768px) {
+  .detail-box {
+      text-align: center; /* Center text */
+      padding: 10px; /* Add padding to detail box */
+  }
+
   .detail-box h1 {
       font-size: 24px; /* Adjust font size for mobile */
       line-height: 1.2; /* Reduce line height */
+      overflow-wrap: break-word; /* Break long words */
+      word-wrap: break-word; /* Break long words */
   }
+
+  .detail-box p {
+      font-size: 16px; /* Adjust font size for paragraphs */
+      overflow-wrap: break-word; /* Break long words */
+      word-wrap: break-word; /* Break long words */
+  }
+
   .btn-box .btn1 {
-    padding: 10px 15px; /* Adjust button padding */
-    font-size: 16px; /* Adjust button font size */
+      padding: 10px 15px; /* Adjust button padding */
+      font-size: 16px; /* Adjust button font size */
+  }
+
+  .carousel-inner .carousel-item {
+      padding: 15px; /* Add padding to carousel items */
+  }
 }
 
-.carousel-inner .carousel-item {
-    padding: 15px; /* Add padding to carousel items */
-}
+/* Further adjustments for very small screens */
+@media (max-width: 576px) {
+  .detail-box h1 {
+      font-size: 20px; /* Further reduce font size */
+  }
+
+  .detail-box p {
+      font-size: 14px; /* Reduce paragraph font size */
+  }
+
+  .btn-box .btn1 {
+      font-size: 14px; /* Adjust button text size */
+  }
 }
 
 .product_section .heading_container {
