@@ -246,6 +246,7 @@ a:focus {
 
 /*end header section*/
 /* slider section */
+/* slider section */
 .slider_section {
   display: flex;
   align-items: center;
@@ -256,6 +257,8 @@ a:focus {
 
 .slider_section .row {
   align-items: center;
+  justify-content: center; /* Center align the row */
+  width: 100%; /* Ensure row takes full width */
 }
 
 .slider_section #customCarousel1 {
@@ -275,6 +278,7 @@ a:focus {
   color: #002c3e;
   line-height: 1.2; /* Maintain line height */
   overflow-wrap: break-word; /* Break long words */
+  word-wrap: break-word; /* Break long words */
 }
 
 .slider_section .detail-box h1 span {
@@ -286,6 +290,7 @@ a:focus {
   margin-top: 20px;
   margin-bottom: 1.5rem;
   overflow-wrap: break-word; /* Break long words */
+  word-wrap: break-word; /* Break long words */
 }
 
 .slider_section .detail-box a {
@@ -298,6 +303,7 @@ a:focus {
   transition: all 0.3s;
   margin-top: 10px;
   font-weight: 700;
+  max-width: 80%; /* Limit button width for mobile */
 }
 
 .slider_section .detail-box a:hover {
@@ -363,15 +369,19 @@ a:focus {
 
   .detail-box p {
       font-size: 14px; /* Adjust font size for paragraphs */
+      max-width: 90%; /* Limit width for better alignment */
+      margin: 0 auto; /* Center align paragraphs */
   }
 
   .btn-box .btn1 {
       padding: 10px 15px; /* Adjust button padding */
       font-size: 14px; /* Adjust button font size */
+      max-width: 80%; /* Limit button width for mobile */
   }
 
   .carousel-inner .carousel-item {
       padding: 15px; /* Adjust padding for carousel items */
+      text-align: center; /* Center text in items */
   }
 }
 
@@ -383,12 +393,15 @@ a:focus {
 
   .detail-box p {
       font-size: 12px; /* Reduce paragraph font size for very small screens */
+      max-width: 90%; /* Limit width for better alignment */
   }
 
   .btn-box .btn1 {
       font-size: 12px; /* Adjust button text size for very small screens */
+      padding: 8px 12px; /* Adjust button padding */
   }
 }
+
 
 
 .product_section .box {
